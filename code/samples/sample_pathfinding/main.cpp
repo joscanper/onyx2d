@@ -1,0 +1,125 @@
+#include <iostream>
+
+#include "../../onyx2d.h"
+
+#include <time.h>
+
+#define ARRAY_SIZE 10
+
+using namespace std;
+using namespace onyx2d;
+
+void UpdateMap(cRectangle *rects[][ARRAY_SIZE], cPathfindingAStar *pathf, float map[][ARRAY_SIZE])
+{
+    vector< Vector2<int16> > path = pathf->GetPath();
+
+    /* Draw the MAP */
+    for (int i=0; i< ARRAY_SIZE; i++)
+        for (int j=0; j< ARRAY_SIZE; j++)
+            rects[i][j]->Color.Set(1.0f,1.0f,1.0f,map[j][i]);
+
+    /* Draw the PATH */
+    for (int i=0; i< path.size(); i++)
+        rects[path[i].x][path[i].y]->Color.Set(0.0f,0.0f,0.5f,0.5f);
+}
+
+int main(int argc, char **argv)
+{
+    /* Initialize the engine */
+    Core()->Init();
+
+    /* Initialize the graphic device */
+    RenderMngr()->DeviceStart(800,600,false,"Onyx Illusion : A* Pathfinding DEMO", argc, argv);
+
+    Vector2<int16> PlayerPos(0, 2);
+    Vector2<int16> TargetPos(9, 2);
+
+    cPathfindingAStar* pathf = new cPathfindingAStar(ARRAY_SIZE, ARRAY_SIZE);
+    pathf->StartPosition = PlayerPos;
+    pathf->TargetPosition = TargetPos;
+
+    /* Map collition values, 1.0 is max value */
+    float map [ARRAY_SIZE][ARRAY_SIZE] =
+    {
+        {0.0f,1.0f,1.0f,1.0f,0.0f,0.0f,1.0f,1.0f,1.0f,0.0f},
+        {0.0f,0.0f,0.0f,0.2f,0.0f,0.0f,0.0f,1.0f,1.0f,0.0f},
+        {0.0f,0.0f,0.0f,1.0f,0.0f,0.0f,0.0f,1.0f,1.0f,0.0f},
+        {0.0f,0.0f,1.0f,1.0f,0.5f,0.0f,1.0f,1.0f,1.0f,0.0f},
+        {0.0f,0.0f,0.0f,1.0f,0.5f,0.2f,1.0f,1.0f,1.0f,0.0f},
+        {0.0f,1.0f,1.0f,1.0f,0.0f,0.0f,1.0f,0.0f,1.0f,0.0f},
+        {0.0f,0.0f,0.0f,1.0f,0.0f,1.0f,1.0f,0.0f,0.0f,0.0f},
+        {0.0f,0.0f,0.0f,1.0f,0.0f,0.0f,0.0f,0.0f,1.0f,0.0f},
+        {0.0f,0.0f,1.0f,1.0f,0.0f,1.0f,1.0f,1.0f,1.0f,0.0f},
+        {0.0f,0.0f,0.0f,0.2f,0.0f,1.0f,1.0f,1.0f,1.0f,0.0f}
+    };
+
+    /* Player image */
+    cImage *player = new cImage("content/images/indiana jones.png");
+    player->Position.Set(PlayerPos.x*50+40,(ARRAY_SIZE*50) - (PlayerPos.y*50)-10,1);
+
+    /* Target image */
+    cImage *target = new cImage("content/images/skeleton.png");
+    target->Position.Set(TargetPos.x*50+40,(ARRAY_SIZE*50) - (TargetPos.y*50)-10,1);
+
+    /* Grid Rectangles */
+    cRectangle* grid[ARRAY_SIZE][ARRAY_SIZE];
+    for (int x=0; x < ARRAY_SIZE; x++)
+    {
+        for (int y=0; y < ARRAY_SIZE; y++)
+        {
+            grid[x][y] = new cRectangle(x*50+50,(ARRAY_SIZE*50) - (y*50),50,50);
+            grid[x][y]->BoundingBox = true;
+
+            pathf->SetValue(x,y,map[y][x]); //Set cell value in the pathfinding
+        }
+    }
+
+    UpdateMap(grid, pathf, map);
+
+    bool done = false;
+    while (!done)
+    {
+
+        /* Update all the engine */
+        Core()->Update();
+
+        if (pathf->StartPosition != PlayerPos)
+        {
+            pathf->StartPosition = PlayerPos;
+            UpdateMap(grid, pathf, map);
+            player->Position.Set(PlayerPos.x*50+40,(ARRAY_SIZE*50) - (PlayerPos.y*50)-10,1);
+        }
+
+        /* Input detection */
+        if (InputMngr()->KeyHit(Keys::Down))
+            if (PlayerPos.y<ARRAY_SIZE-1)
+                PlayerPos.y++;
+        if (InputMngr()->KeyHit(Keys::Up))
+            if (PlayerPos.y>0)
+                PlayerPos.y--;
+        if (InputMngr()->KeyHit(Keys::Left))
+            if (PlayerPos.x>0)
+                PlayerPos.x--;
+        if (InputMngr()->KeyHit(Keys::Right))
+            if (PlayerPos.x<ARRAY_SIZE-1)
+                PlayerPos.x++;
+        if (InputMngr()->KeyHit(Keys::Space))
+        {
+            Vector2<int16> NextPos = pathf->GetNextPos();
+            cout << "La siguiente posicion es (" <<  NextPos.x << "," << NextPos.y << ")" << endl;
+        }
+
+
+
+
+    }
+
+    SAFE_RELEASE(pathf);
+
+    Core()->Dispose();
+
+    return 0;
+
+}
+
+

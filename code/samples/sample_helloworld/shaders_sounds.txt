@@ -1,0 +1,72 @@
+
+#include <iostream>
+#include "../../onyx2d.h"
+
+using namespace std;
+
+int main(int argc, char **argv)
+{
+
+    Core()->Init();
+    RenderMngr()->DeviceStart(800,600,false,"Onyx Illusion : Image DEMO", argc, argv);
+
+    cFPSCounter *fps = new cFPSCounter();
+
+    cImage *img = new cImage("content/images/onyx2d_logo.png");
+    img->Color.a = 0.5f; // Alpha change
+    img->ClearShaderList();
+    img->BoundingBox = true;
+
+    cTextureShader *sh = new cTextureShader();
+    sh->FromFile("content/shaders/none.vert","content/shaders/gray.frag");
+    sh->Compile();
+    img->PushShader(sh);
+
+    cImage *img2 = new cImage("content/images/logo.jpg");
+    img2->ClearShaderList();
+
+    cTextureShader *sh2 = new cTextureShader();
+    sh2->FromFile("content/shaders/none.vert","content/shaders/blur.frag");
+    sh2->Compile();
+    img2->PushShader(sh2);
+
+    cSound *sound = new cSound("content/sounds/music.ogg");
+
+    bool done = false;
+    while (!done)
+    {
+        Core()->Update();
+
+        /* Keys for image control */
+        if (InputMngr()->KeyDown(Keys::Left))
+            img->Position.x -= 2.5;
+        if (InputMngr()->KeyDown(Keys::Right))
+            img->Position.x += 2.5;
+        if (InputMngr()->KeyDown(Keys::Up))
+            img->Position.y += 2.5;
+        if (InputMngr()->KeyDown(Keys::Down))
+            img->Position.y -= 2.5;
+
+        if (InputMngr()->KeyHit(Keys::Space))
+            sound->Play();
+        if (InputMngr()->KeyHit(Keys::Enter))
+            sound->Pause();
+        if (InputMngr()->KeyHit(Keys::S))
+            sound->Stop();
+            //img2->RemoveShader(0);
+
+          //
+
+        /* Image rotation */
+        img->Angle += 2.5;
+
+        /* Key that close the window */
+        if (InputMngr()->KeyHit(Keys::Escape))
+            done = true;
+
+    }
+
+    Core()->Dispose();
+    return 0;
+
+}

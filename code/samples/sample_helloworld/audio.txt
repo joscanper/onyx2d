@@ -1,0 +1,55 @@
+#include "../../onyx2d.h"
+
+int main(int argc, char** argv)
+{
+    Core()->Init();
+    RenderMngr()->DeviceStart(250,100,false,"Onyx Illusion : Audio DEMO", argc, argv);
+
+    /* Speakers images loading */
+    cTexture *tex = new cTexture("content/images/sound.png");
+    cImage *img_snd1 = new cImage(tex);
+    img_snd1->Position.Set(20,40,0);
+    cImage *img_snd2 = new cImage(tex);
+    img_snd2->Position.Set(100,40,0);
+    cImage *img_music = new cImage("content/images/music.png");
+    img_music->Position.Set(180,40,0);
+
+    /* Sounds loading */
+    cSound *snd1 = new cSound("content/sounds/pop.wav");
+    snd1->Loop(true);
+    cSound *snd2 = new cSound("content/sounds/hello.wav");
+    cSound *music = new cSound("content/sounds/music.ogg");
+
+    bool done=false;
+    while (!done)
+    {
+        Core()->Update();
+
+        /* Sound Play */
+        if (img_snd1->MouseHit(Buttons::Left))
+            snd1->Play();
+        if (img_snd2->MouseHit(Buttons::Left))
+            snd2->Play();
+        if (img_music->MouseHit(Buttons::Left))
+            music->Play();
+
+        /* Sound Stop */
+        if (img_snd1->MouseHit(Buttons::Right))
+            snd1->Stop();
+        if (img_snd2->MouseHit(Buttons::Right))
+            snd2->Stop();
+        if (img_music->MouseHit(Buttons::Right))
+            music->Stop();
+
+        /* Sound Pause */
+        if (img_snd1->MouseHit(Buttons::Middle))
+            snd1->Pause();
+        if (img_snd2->MouseHit(Buttons::Middle))
+            snd2->Pause();
+        if (img_music->MouseHit(Buttons::Middle))
+            music->Pause();
+    }
+
+    Core()->Dispose();
+    return 0;
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="sample_game" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../../samples/test" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../../samples" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="..\..\..\bin\libonyx2d_d.a" />
+					<Add library="..\..\..\lib\3rdparty\freeglut.lib" />
+					<Add library="..\..\..\lib\3rdparty\freeimage.lib" />
+					<Add library="..\..\..\lib\3rdparty\GLee.lib" />
+					<Add library="..\..\..\lib\3rdparty\alut.lib" />
+					<Add library="..\..\..\lib\3rdparty\OpenAL32.lib" />
+					<Add library="..\..\..\lib\3rdparty\vorbis.lib" />
+					<Add library="..\..\..\lib\3rdparty\vorbisenc.lib" />
+					<Add library="..\..\..\lib\3rdparty\vorbisfile.lib" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/sample_helloworld" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="TODO.txt" />
+		<Unit filename="audio.txt" />
+		<Unit filename="basic_shapes.txt" />
+		<Unit filename="content.txt" />
+		<Unit filename="helloworld.txt" />
+		<Unit filename="images.txt" />
+		<Unit filename="include/Game.h" />
+		<Unit filename="include/LifeBar.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="particlesystem.txt" />
+		<Unit filename="particlesystem2.txt" />
+		<Unit filename="pathfinding.txt" />
+		<Unit filename="shaders_sounds.txt" />
+		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/LifeBar.cpp" />
+		<Unit filename="xml.txt" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,32 @@
+
+#include <iostream>
+#include "../../onyx2d.h"
+
+using namespace std;
+
+int main(int argc, char **argv)
+{
+    Core()->Init();
+
+    //Xml Loading
+    string XmlPath = "content/xml/test.xml";
+    cXMLDocument doc(XmlPath);
+    if(doc.LoadFile()){ //Check if file exist
+        cXMLElement *pRoot = doc.RootElement();
+        cXMLElement *pElem;
+
+        pElem = pRoot->FirstChildElement( "person" );
+        for( pElem; pElem; pElem=pElem->NextSiblingElement()) //Get fields of each person
+        {
+            cout << "Edad: " << pElem->Attribute("age") << endl;
+            cout << pElem->FirstChildElement("name")->GetText() << endl;
+            cout << pElem->FirstChildElement("surname")->GetText() << endl;
+            cout << "--------" << endl;
+        }
+    }
+
+
+    Core()->Dispose();
+    return 0;
+
+}

@@ -1,0 +1,73 @@
+#include <iostream>
+#include "../../onyx2d.h"
+
+using namespace std;
+
+int main(int argc, char **argv)
+{
+    /* Initialize the engine */
+    Core()->Init();
+
+    /* Initialize the graphic device */
+    RenderMngr()->DeviceStart(800,600,false,"Onyx Illusion : Particle System Demo", argc, argv);
+
+    /* Rock Texture */
+    cTexture *tx_rock = new cTexture("content/images/rock.png");
+
+    /* Default Particle System */
+    cParticleSystem *ps_snow = new cParticleSystem();
+    ps_snow->BoundingBox = true;
+    ps_snow->Position.Set(0,RenderMngr()->DeviceSize().y-10,0);
+    ps_snow->Size.Set(800,10);
+    ps_snow->YVelocityRange.Set(-2,-2);
+    ps_snow->YAccelerationRange.Set(-0.02,-0.02f);
+
+    cParticleSystem *ps_cursor = new cParticleSystem();
+    ps_cursor->EnergyRange.Set(5,20);
+    ps_cursor->NumberRange.Set(5,10);
+    ps_cursor->InitColor.Set(1.0f,1.0f,0.0f,1.0f);
+    ps_cursor->EndColor.Set(1.0f,0.0f,0.0f,0.0f);
+    ps_cursor->XVelocityRange.Set(-0.5,0.5);
+    ps_cursor->YVelocityRange.Set(0.5,0.5);
+    ps_cursor->YAccelerationRange.Set(0.5,0.5);
+
+    cParticleSystem *ps_rocks = new cParticleSystem();
+    ps_rocks->Texture = tx_rock;
+    ps_rocks->AngleRange.Set(0.0f,180.0f);
+    ps_rocks->ScaleRange.Set(0.2f,1.0f);
+    ps_rocks->XVelocityRange.Set(-5,5);
+    ps_rocks->YVelocityRange.Set(-5,5);
+    ps_rocks->NumberRange.Set(10,15);
+
+
+    cFPSCounter *fps = new cFPSCounter();
+
+    bool done = false;
+    while (!done)
+    {
+
+        /* Update all the engine */
+        Core()->Update();
+
+        /* Input detection */
+        if (InputMngr()->KeyHit(Keys::Escape))
+            done = true;
+        if (InputMngr()->MouseHit(Buttons::Left))
+        {
+            ps_rocks->Position.Set(InputMngr()->MousePosition().x, InputMngr()->MousePosition().y, 0);
+            ps_rocks->Emit();
+        }
+
+        ps_cursor->Position.Set(InputMngr()->MousePosition().x, InputMngr()->MousePosition().y, 0);
+        ps_cursor->Emit();
+
+        ps_snow->Emit();
+
+
+    }
+
+    Core()->Dispose();
+    return 0;
+
+}
+

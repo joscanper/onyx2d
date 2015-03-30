@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="onyx_illusion" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../bin/onyx2d_d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-static" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="onyx2d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="ai/cpathfindingastar.cpp" />
+		<Unit filename="ai/cpathfindingastar.h" />
+		<Unit filename="core/cconsole.cpp" />
+		<Unit filename="core/cconsole.h" />
+		<Unit filename="core/ccontentmanager.cpp" />
+		<Unit filename="core/ccontentmanager.h" />
+		<Unit filename="core/ccore.cpp" />
+		<Unit filename="core/ccore.h" />
+		<Unit filename="core/cdate.h" />
+		<Unit filename="core/cobject.cpp" />
+		<Unit filename="core/cobject.h" />
+		<Unit filename="core/csingleton.h" />
+		<Unit filename="core/math/crect.cpp" />
+		<Unit filename="core/math/crect.hpp" />
+		<Unit filename="core/math/cvector2.h" />
+		<Unit filename="core/math/cvector2.inl" />
+		<Unit filename="core/math/cvector3.h" />
+		<Unit filename="core/math/cvector3.inl" />
+		<Unit filename="core/math/cvector4.h" />
+		<Unit filename="core/math/cvector4.inl" />
+		<Unit filename="core/math/mathtypes.h" />
+		<Unit filename="core/math/mathutils.h" />
+		<Unit filename="core/math/mathutils.inl" />
+		<Unit filename="core/utils/ctimer.cpp" />
+		<Unit filename="core/utils/ctimer.h" />
+		<Unit filename="core/utils/gen_func.cpp" />
+		<Unit filename="core/utils/gen_func.h" />
+		<Unit filename="core/utils/types.h" />
+		<Unit filename="core/xml/xml.cpp" />
+		<Unit filename="core/xml/xml.h" />
+		<Unit filename="core/xml/xmlerror.cpp" />
+		<Unit filename="core/xml/xmlparser.cpp" />
+		<Unit filename="core/xml/xmlstr.cpp" />
+		<Unit filename="core/xml/xmlstr.h" />
+		<Unit filename="graphic/ccircle.cpp" />
+		<Unit filename="graphic/ccircle.h" />
+		<Unit filename="graphic/ccolor.h" />
+		<Unit filename="graphic/ccolor.inl" />
+		<Unit filename="graphic/cdrawable.cpp" />
+		<Unit filename="graphic/cdrawable.h" />
+		<Unit filename="graphic/cfpscounter.cpp" />
+		<Unit filename="graphic/cfpscounter.h" />
+		<Unit filename="graphic/cimage.cpp" />
+		<Unit filename="graphic/cimage.h" />
+		<Unit filename="graphic/cline.cpp" />
+		<Unit filename="graphic/cline.h" />
+		<Unit filename="graphic/cparticlesystem.cpp" />
+		<Unit filename="graphic/cparticlesystem.h" />
+		<Unit filename="graphic/crectangle.cpp" />
+		<Unit filename="graphic/crectangle.h" />
+		<Unit filename="graphic/crendermanager.cpp" />
+		<Unit filename="graphic/crendermanager.h" />
+		<Unit filename="graphic/cshader.cpp" />
+		<Unit filename="graphic/cshader.h" />
+		<Unit filename="graphic/cshading.cpp" />
+		<Unit filename="graphic/cshading.h" />
+		<Unit filename="graphic/ctext.cpp" />
+		<Unit filename="graphic/ctext.h" />
+		<Unit filename="graphic/ctexture.cpp" />
+		<Unit filename="graphic/ctexture.h" />
+		<Unit filename="graphic/ctextureshader.cpp" />
+		<Unit filename="graphic/ctextureshader.h" />
+		<Unit filename="graphic/ctriangle.cpp" />
+		<Unit filename="graphic/ctriangle.h" />
+		<Unit filename="input/cinputmanager.cpp" />
+		<Unit filename="input/cinputmanager.h" />
+		<Unit filename="onyx2d.h" />
+		<Unit filename="onyx2d_defs.h" />
+		<Unit filename="sound/csound.cpp" />
+		<Unit filename="sound/csound.h" />
+		<Unit filename="sound/csoundmanager.cpp" />
+		<Unit filename="sound/csoundmanager.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone=no>
+<content>	
+	<!-- Images -->
+	<images>
+		<iLOGO>content/images/onyx2d_logo.png</iLOGO>
+	</images>
+		
+	<!-- Sounds -->
+	<sounds>
+		<sMUSIC>content/sounds/music.ogg</sMUSIC>
+	</sounds>
+		
+	<!-- Texts -->
+	<texts>
+		<tHELLOWORLD_en>HELLO WORLD</tHELLOWORLD_en>
+		<tHELLOWORLD_sp>HOLA MUNDO</tHELLOWORLD_sp>
+	</texts>
+	
+</content>

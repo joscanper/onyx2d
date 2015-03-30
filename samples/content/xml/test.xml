@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<people>
+
+    <person age='22'>
+        <name>Juan</name>
+        <surname>El apellido de Juan</surname>      
+    </person>
+
+    <person age='32'>
+        <name>Pepe</name>
+        <surname>El apellido de Pepe</surname>
+    </person>
+
+</people>
+

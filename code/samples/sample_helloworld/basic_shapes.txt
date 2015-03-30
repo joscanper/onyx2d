@@ -1,0 +1,28 @@
+#include "../../onyx2d.h"
+
+int main(int argc, char** argv)
+{
+    Core()->Init();
+    RenderMngr()->DeviceStart(800,600,false,"Onyx Illusion : Audio DEMO", argc, argv);
+
+    /* Speakers images loading */
+    cLine *ln = new cLine(90,110,300,110);
+    cLine *ln2 = new cLine(100,100,100,300);
+
+    cTriangle *tr = new cTriangle(100,100,100,100);
+    tr->Position.z=1;
+    tr->Color(1.0,0.0,1.0,0.5);
+    cCircle *ov = new cCircle(0,0,500);
+
+    bool done=false;
+    while (!done)
+    {
+        Core()->Update();
+
+
+    }
+
+    Core()->Dispose();
+    return 0;
+}
+

@@ -1,0 +1,42 @@
+#include <iostream>
+#include "../../onyx2d.h"
+
+using namespace std;
+
+int main(int argc, char **argv)
+{
+
+    Core()->Init();
+    RenderMngr()->DeviceStart(800,600,false,"Onyx Illusion : Image DEMO", argc, argv);
+
+    cImage *img = new cImage("content/images/onyx2d_logo.png");
+    img->Color.a = 0.5f; // Alpha change
+
+    bool done = false;
+    while (!done)
+    {
+        Core()->Update();
+
+        /* Keys for image control */
+        if (InputMngr()->KeyDown(Keys::Left))
+            img->Position.x -= 2.5;
+        if (InputMngr()->KeyDown(Keys::Right))
+            img->Position.x += 2.5;
+        if (InputMngr()->KeyDown(Keys::Up))
+            img->Position.y += 2.5;
+        if (InputMngr()->KeyDown(Keys::Down))
+            img->Position.y -= 2.5;
+
+        /* Image rotation */
+        img->Angle += 2.5;
+
+        /* Key that close the window */
+        if (InputMngr()->KeyHit(Keys::Escape))
+            done = true;
+
+    }
+
+    Core()->Dispose();
+    return 0;
+
+}

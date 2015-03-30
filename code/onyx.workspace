@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="samples/sample_helloworld/sample_helloworld.cbp">
+			<Depends filename="onyx_illusion.cbp" />
+		</Project>
+		<Project filename="samples/sample_pathfinding/sample_pathfinding.cbp">
+			<Depends filename="onyx_illusion.cbp" />
+		</Project>
+		<Project filename="samples/sample_particlesystem/sample_particlesystem.cbp" />
+		<Project filename="onyx_illusion.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

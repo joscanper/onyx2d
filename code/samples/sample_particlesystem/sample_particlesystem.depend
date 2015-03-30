@@ -1,0 +1,339 @@
+# depslib dependency file v1.0
+1367570608 source:c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\samples\sample_particlesystem\main.cpp
+	<iostream>
+	"../../onyx2d.h"
+
+1296036722 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\onyx2d.h
+	"onyx2d_defs.h"
+	"core/ccore.h"
+	"core/cconsole.h"
+	"core/utils/ctimer.h"
+	"core/xml/xml.h"
+	"core/xml/xmlstr.h"
+	"core/utils/gen_func.h"
+	"core/ccontentmanager.h"
+	"graphic/crendermanager.h"
+	"graphic/ctexture.h"
+	"graphic/cline.h"
+	"graphic/crectangle.h"
+	"graphic/ccircle.h"
+	"graphic/ctriangle.h"
+	"graphic/cshader.h"
+	"graphic/ctextureshader.h"
+	"graphic/cimage.h"
+	"graphic/ccolor.h"
+	"graphic/cfpscounter.h"
+	"graphic/cparticlesystem.h"
+	"graphic/ctext.h"
+	"input/cinputmanager.h"
+	"sound/csoundmanager.h"
+	"sound/csound.h"
+	"ai/cpathfindingastar.h"
+
+1367521061 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\onyx2d_defs.h
+	<windows.h>
+	"3rdparty/GL/GLee.h"
+	"3rdparty/GL/wglext.h"
+	"3rdparty/GL/glext.h"
+	<GL/gl.h>
+	"3rdparty/GL/freeglut.h"
+	"core/utils/types.h"
+	<cstdlib>
+
+1234035982 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\3rdparty\gl\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1287782398 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\3rdparty\gl\wglext.h
+	<windows.h>
+
+1287782369 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\3rdparty\gl\glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1066740114 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\3rdparty\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1287172711 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\3rdparty\gl\freeglut_std.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1249933198 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\3rdparty\gl\freeglut_ext.h
+
+1289916528 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\utils\types.h
+
+1288814444 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\ccore.h
+	"csingleton.h"
+	<string>
+
+1288814587 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\csingleton.h
+	<assert.h>
+
+1288814436 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\cconsole.h
+	<vector>
+	"csingleton.h"
+	"cdate.h"
+	"../graphic/cdrawable.h"
+	"../graphic/cimage.h"
+	"../onyx2d_defs.h"
+
+1288814507 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\cdate.h
+	"../onyx2d_defs.h"
+	<string>
+
+1367537285 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\graphic\cdrawable.h
+	"../core/math/crect.hpp"
+	"../core/math/cvector2.h"
+	"../core/math/cvector3.h"
+	"../core/utils/gen_func.h"
+	"ccolor.h"
+	"../core/cobject.h"
+	<algorithm>
+
+1367529124 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\math\crect.hpp
+	"cvector2.h"
+
+1367529474 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\math\cvector2.h
+	"mathtypes.h"
+	"mathutils.h"
+	"../utils/types.h"
+	"cvector2.inl"
+
+1287356144 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\math\mathtypes.h
+	"../utils/types.h"
+	<float.h>
+
+1287356083 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\math\mathutils.h
+	<math.h>
+	"mathtypes.h"
+	"mathutils.inl"
+
+1287356128 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\math\mathutils.inl
+
+1367529487 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\math\cvector2.inl
+
+1287356117 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\math\cvector3.h
+	"mathtypes.h"
+	"mathutils.h"
+	"cvector2.h"
+	"../utils/types.h"
+	"cvector3.inl"
+
+1287356109 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\math\cvector3.inl
+
+1296032572 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\utils\gen_func.h
+	<string>
+	<vector>
+	<iostream>
+	<fstream>
+	<time.h>
+	"../../onyx2d_defs.h"
+
+1296041971 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\graphic\ccolor.h
+	"../core/math/mathtypes.h"
+	"../core/math/mathutils.h"
+	"../core/math/cvector2.h"
+	"../core/math/cvector3.h"
+	"../core/utils/types.h"
+	"ccolor.inl"
+
+1296042796 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\graphic\ccolor.inl
+
+1288892787 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\cobject.h
+
+1296043106 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\graphic\cimage.h
+	"../onyx2d_defs.h"
+	"../core/math/cvector2.h"
+	"cshading.h"
+	"ctexture.h"
+	"ctextureshader.h"
+	<algorithm>
+
+1296043612 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\graphic\cshading.h
+	"cdrawable.h"
+	"cshader.h"
+	<vector>
+
+1296043482 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\graphic\cshader.h
+	"../onyx2d_defs.h"
+	"../core/cobject.h"
+	<iostream>
+	<fstream>
+
+1296043704 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\graphic\ctexture.h
+	"../onyx2d_defs.h"
+	"../3rdparty/freeimage.h"
+	"../core/math/cvector2.h"
+	<fstream>
+	<iostream>
+	<string>
+
+1367521250 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\3rdparty\freeimage.h
+	<wchar.h>
+	<inttypes.h>
+
+1288904156 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\graphic\ctextureshader.h
+	"../onyx2d_defs.h"
+	"cshader.h"
+
+1288800241 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\utils\ctimer.h
+	"../../onyx2d_defs.h"
+	<windows.h>
+	<sys/time.h>
+
+1288813009 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\xml\xml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"xmlstr.h"
+
+1288810750 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\xml\xmlstr.h
+	<assert.h>
+	<string.h>
+
+1293907738 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\ccontentmanager.h
+	"../onyx2d_defs.h"
+	"csingleton.h"
+	"utils/gen_func.h"
+	"xml/xml.h"
+	"../graphic/cimage.h"
+	"../sound/csound.h"
+	<iostream>
+
+1296043933 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\sound\csound.h
+	<string>
+	<vector>
+	<stdio.h>
+	<iostream>
+	"../core/cobject.h"
+	"../3rdparty/vorbis/vorbisfile.h"
+	"../3rdparty/AL/alut.h"
+	"../core/utils/gen_func.h"
+	"../onyx2d_defs.h"
+
+1185203388 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\3rdparty\vorbis\vorbisfile.h
+	<stdio.h>
+	"codec.h"
+
+1240514657 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\3rdparty\vorbis\codec.h
+	"ogg/ogg.h"
+
+1289916057 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\3rdparty\vorbis\ogg\ogg.h
+	"os_types.h"
+
+1289916907 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\3rdparty\vorbis\ogg\os_types.h
+	<sys/types.h>
+	<sys/types.h>
+	<inttypes.h>
+	<sys/types.h>
+	<ogg/config_types.h>
+
+1289917047 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\3rdparty\al\alut.h
+	"alc.h"
+	"al.h"
+	<OpenAL/alc.h>
+	<OpenAL/al.h>
+	"al.h"
+	"alc.h"
+
+1176472968 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\3rdparty\al\alc.h
+
+1165588258 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\3rdparty\al\al.h
+
+1367525297 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\graphic\crendermanager.h
+	"../onyx2d_defs.h"
+	"../core/csingleton.h"
+	"../core/math/cvector2.h"
+	"../core/math/cvector3.h"
+	"cdrawable.h"
+	"crectangle.h"
+	"ccolor.h"
+	<iostream>
+	<sstream>
+	<vector>
+
+1296045211 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\graphic\crectangle.h
+	"cdrawable.h"
+
+1296043237 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\graphic\cline.h
+	"../onyx2d_defs.h"
+	"cdrawable.h"
+
+1296043245 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\graphic\ccircle.h
+	"../onyx2d_defs.h"
+	"../core/utils/gen_func.h"
+	"cdrawable.h"
+
+1290268956 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\graphic\ctriangle.h
+	"../onyx2d_defs.h"
+	"cdrawable.h"
+
+1288814660 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\graphic\cfpscounter.h
+	"cdrawable.h"
+	"../onyx2d_defs.h"
+	"../core/utils/ctimer.h"
+	<string>
+	<iostream>
+
+1296041286 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\graphic\cparticlesystem.h
+	"cdrawable.h"
+	"ctexture.h"
+	"../core/utils/gen_func.h"
+	"../core/math/cvector2.h"
+	"../core/math/cvector4.h"
+	<stdlib.h>
+	<vector>
+	<time.h>
+
+1288727647 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\math\cvector4.h
+	"mathtypes.h"
+	"mathutils.h"
+	"cvector2.h"
+	"cvector3.h"
+	"../utils/types.h"
+	"cvector4.inl"
+
+1288725497 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\core\math\cvector4.inl
+
+1296038082 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\graphic\ctext.h
+	"../onyx2d_defs.h"
+	"cdrawable.h"
+	<string>
+
+1296029922 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\input\cinputmanager.h
+	"../core/csingleton.h"
+	"../core/math/cvector2.h"
+	<cstdio>
+
+1290225234 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\sound\csoundmanager.h
+	<vector>
+	"../core/csingleton.h"
+	"csound.h"
+	"../onyx2d_defs.h"
+
+1290032768 c:\almacenamiento\proyectos antiguos\engines\onyxillusion_svn\code\ai\cpathfindingastar.h
+	<vector>
+	<queue>
+	<iostream>
+	<algorithm>
+	"../core/math/cvector2.h"
+	"../onyx2d_defs.h"
+

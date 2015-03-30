@@ -1,0 +1,31 @@
+#include <iostream>
+#include "../../onyx2d.h"
+
+using namespace std;
+
+int main(int argc, char **argv)
+{
+    /* Initialize the engine */
+    Core()->Init();
+
+    /* Initialize the graphic device */
+    RenderMngr()->DeviceStart(250,100,false,"HOLA MUNDO", argc, argv);
+
+    bool done = false;
+    while (!done)
+    {
+
+        /* Update all the engine */
+        Core()->Update();
+
+        /* Input detection */
+        if (InputMngr()->KeyHit(Keys::Escape))
+            done = true;
+        if (InputMngr()->MouseHit(Buttons::Left))
+            cout << "a";
+    }
+
+    Core()->Dispose();
+    return 0;
+
+}
