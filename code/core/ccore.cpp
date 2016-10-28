@@ -25,8 +25,11 @@
 #include "../graphic/crendermanager.h"
 #include "../input/cinputmanager.h"
 #include "../sound/csoundmanager.h"
+#include "utils/ctimer.h"
 #include "ccontentmanager.h"
 #include "cconsole.h"
+
+
 
 namespace onyx2d
 {
@@ -59,9 +62,15 @@ bool cCore::Init(string log_file)
 
 void cCore::Update()
 {
+    cTimer *timer = new cTimer();
+    timer->Start();
+
     /* Here we update all the managers */
     RenderMngr()->Update();
 
+    while (timer->GetElapsedTimeInMilliSec() < (1000/_framerate));
+    timer->Stop();
+    SAFE_RELEASE(timer);
 }
 
 void cCore::Dispose()
@@ -70,6 +79,17 @@ void cCore::Dispose()
     RenderMngr()->DeviceEnd();
    // MemLeaks::MemoryEnd();
     //PrintMemoryLeakInfo();
+}
+
+
+void cCore::SetFramerate(int fps)
+{
+    _framerate = fps;
+}
+
+int cCore::GetFramerate()
+{
+    return _framerate;
 }
 
 }//namespace onyx2d

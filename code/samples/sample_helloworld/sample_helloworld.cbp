@@ -14,17 +14,18 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
-					<Add library="..\..\..\bin\libonyx2d_d.a" />
-					<Add library="..\..\..\lib\3rdparty\freeglut.lib" />
-					<Add library="..\..\..\lib\3rdparty\freeimage.lib" />
-					<Add library="..\..\..\lib\3rdparty\GLee.lib" />
-					<Add library="..\..\..\lib\3rdparty\alut.lib" />
-					<Add library="..\..\..\lib\3rdparty\OpenAL32.lib" />
-					<Add library="..\..\..\lib\3rdparty\vorbis.lib" />
-					<Add library="..\..\..\lib\3rdparty\vorbisenc.lib" />
-					<Add library="..\..\..\lib\3rdparty\vorbisfile.lib" />
+					<Add library="../../../bin/libonyx2d_d.a" />
+					<Add library="../../../lib/3rdparty/freeglut.lib" />
+					<Add library="../../../lib/3rdparty/freeimage.lib" />
+					<Add library="../../../lib/3rdparty/GLee.lib" />
+					<Add library="../../../lib/3rdparty/alut.lib" />
+					<Add library="../../../lib/3rdparty/OpenAL32.lib" />
+					<Add library="../../../lib/3rdparty/vorbis.lib" />
+					<Add library="../../../lib/3rdparty/vorbisenc.lib" />
+					<Add library="../../../lib/3rdparty/vorbisfile.lib" />
 					<Add library="opengl32" />
 					<Add library="glu32" />
 				</Linker>
@@ -36,6 +37,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -51,15 +53,25 @@
 		<Unit filename="content.txt" />
 		<Unit filename="helloworld.txt" />
 		<Unit filename="images.txt" />
+		<Unit filename="include/Bullet.h" />
+		<Unit filename="include/BulletsManager.h" />
+		<Unit filename="include/EnemyShip.h" />
 		<Unit filename="include/Game.h" />
 		<Unit filename="include/LifeBar.h" />
+		<Unit filename="include/PlayerShip.h" />
+		<Unit filename="include/Ship.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="particlesystem.txt" />
 		<Unit filename="particlesystem2.txt" />
 		<Unit filename="pathfinding.txt" />
 		<Unit filename="shaders_sounds.txt" />
+		<Unit filename="src/Bullet.cpp" />
+		<Unit filename="src/BulletsManager.cpp" />
+		<Unit filename="src/EnemyShip.cpp" />
 		<Unit filename="src/Game.cpp" />
 		<Unit filename="src/LifeBar.cpp" />
+		<Unit filename="src/PlayerShip.cpp" />
+		<Unit filename="src/Ship.cpp" />
 		<Unit filename="xml.txt" />
 		<Extensions>
 			<code_completion />

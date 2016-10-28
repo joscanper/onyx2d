@@ -3,9 +3,9 @@
 
 #include "../../../onyx2d.h"
 
-#include "LifeBar.h"
-
-#define BULLET_SPEED 5
+#include "EnemyShip.h"
+#include "PlayerShip.h"
+#include "BulletsManager.h"
 
 using namespace onyx2d;
 
@@ -14,38 +14,17 @@ class Game
     public:
         Game();
         virtual ~Game();
-
         void Update(bool &done);
-
         void Dispose();
     protected:
     private:
+        cPlayerShip * player;
+        cEnemyShip * enemy;
+        cBulletsManager * bullets;
+
         cImage * bg;
-        cImage * enemy;
-        cImage * player;
-        cImage * p_bullet;
-        cImage * e_bullet;
-        cParticleSystem * ps_engineL;
-        cParticleSystem * ps_engineR;
-
-        LifeBar* elifeBar;
-        LifeBar* plifeBar;
-
-        cSound * sndLaser1;
-        cSound * sndLaser2;
-        cSound * sndHurt1;
-
-        vector<cImage*> p_bullets;
-        vector<cImage*> e_bullets;
 
         void Initialize();
-
-        void UpdateBullets();
-
-        void EnemyAI();
-
-        void ShipControl();
-
 
 };
 

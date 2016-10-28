@@ -1,1 +1,394 @@
 # depslib dependency file v1.0
+1458643962 source:c:\users\josue\desktop\mythings\onyx2d\code\samples\sample_helloworld\main.cpp
+	<iostream>
+	"../../onyx2d.h"
+	"include/Game.h"
+
+1458643962 c:\users\josue\desktop\mythings\onyx2d\code\onyx2d.h
+	"onyx2d_defs.h"
+	"core/ccore.h"
+	"core/cconsole.h"
+	"core/utils/ctimer.h"
+	"core/xml/xml.h"
+	"core/xml/xmlstr.h"
+	"core/utils/gen_func.h"
+	"core/ccontentmanager.h"
+	"graphic/crendermanager.h"
+	"graphic/ctexture.h"
+	"graphic/cline.h"
+	"graphic/crectangle.h"
+	"graphic/ccircle.h"
+	"graphic/ctriangle.h"
+	"graphic/cshader.h"
+	"graphic/ctextureshader.h"
+	"graphic/cimage.h"
+	"graphic/ccolor.h"
+	"graphic/cfpscounter.h"
+	"graphic/cparticlesystem.h"
+	"graphic/ctext.h"
+	"input/cinputmanager.h"
+	"sound/csoundmanager.h"
+	"sound/csound.h"
+	"ai/cpathfindingastar.h"
+
+1458643962 c:\users\josue\desktop\mythings\onyx2d\code\onyx2d_defs.h
+	<windows.h>
+	"3rdparty/GL/GLee.h"
+	"3rdparty/GL/wglext.h"
+	"3rdparty/GL/glext.h"
+	<GL/gl.h>
+	"3rdparty/GL/freeglut.h"
+	"core/utils/types.h"
+	<cstdlib>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\3rdparty\gl\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\3rdparty\gl\wglext.h
+	<windows.h>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\3rdparty\gl\glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\3rdparty\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\3rdparty\gl\freeglut_std.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\3rdparty\gl\freeglut_ext.h
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\utils\types.h
+
+1477577149 c:\users\josue\desktop\mythings\onyx2d\code\core\ccore.h
+	"csingleton.h"
+	<string>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\csingleton.h
+	<assert.h>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\cconsole.h
+	<vector>
+	"csingleton.h"
+	"cdate.h"
+	"../graphic/cdrawable.h"
+	"../graphic/cimage.h"
+	"../onyx2d_defs.h"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\cdate.h
+	"../onyx2d_defs.h"
+	<string>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\graphic\cdrawable.h
+	"../core/math/crect.hpp"
+	"../core/math/cvector2.h"
+	"../core/math/cvector3.h"
+	"../core/utils/gen_func.h"
+	"ccolor.h"
+	"../core/cobject.h"
+	<algorithm>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\math\crect.hpp
+	"cvector2.h"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\math\cvector2.h
+	"mathtypes.h"
+	"mathutils.h"
+	"../utils/types.h"
+	"cvector2.inl"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\math\mathtypes.h
+	"../utils/types.h"
+	<float.h>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\math\mathutils.h
+	<math.h>
+	"mathtypes.h"
+	"mathutils.inl"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\math\mathutils.inl
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\math\cvector2.inl
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\math\cvector3.h
+	"mathtypes.h"
+	"mathutils.h"
+	"cvector2.h"
+	"../utils/types.h"
+	"cvector3.inl"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\math\cvector3.inl
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\utils\gen_func.h
+	<string>
+	<vector>
+	<iostream>
+	<fstream>
+	<time.h>
+	"../../onyx2d_defs.h"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\graphic\ccolor.h
+	"../core/math/mathtypes.h"
+	"../core/math/mathutils.h"
+	"../core/math/cvector2.h"
+	"../core/math/cvector3.h"
+	"../core/utils/types.h"
+	"ccolor.inl"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\graphic\ccolor.inl
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\cobject.h
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\graphic\cimage.h
+	"../onyx2d_defs.h"
+	"../core/math/cvector2.h"
+	"cshading.h"
+	"ctexture.h"
+	"ctextureshader.h"
+	<algorithm>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\graphic\cshading.h
+	"cdrawable.h"
+	"cshader.h"
+	<vector>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\graphic\cshader.h
+	"../onyx2d_defs.h"
+	"../core/cobject.h"
+	<iostream>
+	<fstream>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\graphic\ctexture.h
+	"../onyx2d_defs.h"
+	"../3rdparty/freeimage.h"
+	"../core/math/cvector2.h"
+	<fstream>
+	<iostream>
+	<string>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\3rdparty\freeimage.h
+	<wchar.h>
+	<inttypes.h>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\graphic\ctextureshader.h
+	"../onyx2d_defs.h"
+	"cshader.h"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\utils\ctimer.h
+	"../../onyx2d_defs.h"
+	<windows.h>
+	<sys/time.h>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\xml\xml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"xmlstr.h"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\xml\xmlstr.h
+	<assert.h>
+	<string.h>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\ccontentmanager.h
+	"../onyx2d_defs.h"
+	"csingleton.h"
+	"utils/gen_func.h"
+	"xml/xml.h"
+	"../graphic/cimage.h"
+	"../sound/csound.h"
+	<iostream>
+
+1458643962 c:\users\josue\desktop\mythings\onyx2d\code\sound\csound.h
+	<string>
+	<vector>
+	<stdio.h>
+	<iostream>
+	"../core/cobject.h"
+	"../3rdparty/vorbis/vorbisfile.h"
+	"../3rdparty/AL/alut.h"
+	"../core/utils/gen_func.h"
+	"../onyx2d_defs.h"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\3rdparty\vorbis\vorbisfile.h
+	<stdio.h>
+	"codec.h"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\3rdparty\vorbis\codec.h
+	"ogg/ogg.h"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\3rdparty\vorbis\ogg\ogg.h
+	"os_types.h"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\3rdparty\vorbis\ogg\os_types.h
+	<sys/types.h>
+	<sys/types.h>
+	<inttypes.h>
+	<sys/types.h>
+	<ogg/config_types.h>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\3rdparty\al\alut.h
+	"alc.h"
+	"al.h"
+	<OpenAL/alc.h>
+	<OpenAL/al.h>
+	"al.h"
+	"alc.h"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\3rdparty\al\alc.h
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\3rdparty\al\al.h
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\graphic\crendermanager.h
+	"../onyx2d_defs.h"
+	"../core/csingleton.h"
+	"../core/math/cvector2.h"
+	"../core/math/cvector3.h"
+	"cdrawable.h"
+	"crectangle.h"
+	"ccolor.h"
+	<iostream>
+	<sstream>
+	<vector>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\graphic\crectangle.h
+	"cdrawable.h"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\graphic\cline.h
+	"../onyx2d_defs.h"
+	"cdrawable.h"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\graphic\ccircle.h
+	"../onyx2d_defs.h"
+	"../core/utils/gen_func.h"
+	"cdrawable.h"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\graphic\ctriangle.h
+	"../onyx2d_defs.h"
+	"cdrawable.h"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\graphic\cfpscounter.h
+	"cdrawable.h"
+	"../onyx2d_defs.h"
+	"../core/utils/ctimer.h"
+	<string>
+	<iostream>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\graphic\cparticlesystem.h
+	"cdrawable.h"
+	"ctexture.h"
+	"../core/utils/gen_func.h"
+	"../core/math/cvector2.h"
+	"../core/math/cvector4.h"
+	<stdlib.h>
+	<vector>
+	<time.h>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\math\cvector4.h
+	"mathtypes.h"
+	"mathutils.h"
+	"cvector2.h"
+	"cvector3.h"
+	"../utils/types.h"
+	"cvector4.inl"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\core\math\cvector4.inl
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\graphic\ctext.h
+	"../onyx2d_defs.h"
+	"cdrawable.h"
+	<string>
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\input\cinputmanager.h
+	"../core/csingleton.h"
+	"../core/math/cvector2.h"
+	<cstdio>
+
+1458643962 c:\users\josue\desktop\mythings\onyx2d\code\sound\csoundmanager.h
+	<vector>
+	"../core/csingleton.h"
+	"csound.h"
+	"../onyx2d_defs.h"
+
+1458643961 c:\users\josue\desktop\mythings\onyx2d\code\ai\cpathfindingastar.h
+	<vector>
+	<queue>
+	<iostream>
+	<algorithm>
+	"../core/math/cvector2.h"
+	"../onyx2d_defs.h"
+
+1477582430 c:\users\josue\desktop\mythings\onyx2d\code\samples\sample_helloworld\include\game.h
+	"../../../onyx2d.h"
+	"EnemyShip.h"
+	"PlayerShip.h"
+	"BulletsManager.h"
+
+1458643962 source:c:\users\josue\desktop\mythings\onyx2d\code\samples\sample_helloworld\src\lifebar.cpp
+	"../include/LifeBar.h"
+
+1458643962 c:\users\josue\desktop\mythings\onyx2d\code\samples\sample_helloworld\include\lifebar.h
+	"../../../onyx2d.h"
+
+1477578700 c:\users\josue\desktop\mythings\onyx2d\code\samples\sample_helloworld\include\enemyship.h
+	"../../../onyx2d.h"
+	"Ship.h"
+
+1477582096 c:\users\josue\desktop\mythings\onyx2d\code\samples\sample_helloworld\include\playership.h
+	"../../../onyx2d.h"
+	"Ship.h"
+
+1477584964 c:\users\josue\desktop\mythings\onyx2d\code\samples\sample_helloworld\include\ship.h
+	"../../../onyx2d.h"
+
+1477585100 source:c:\users\josue\desktop\mythings\onyx2d\code\samples\sample_helloworld\src\enemyship.cpp
+	"EnemyShip.h"
+	"Bullet.h"
+	"LifeBar.h"
+
+1477585113 source:c:\users\josue\desktop\mythings\onyx2d\code\samples\sample_helloworld\src\game.cpp
+	"../include/Game.h"
+
+1477585106 source:c:\users\josue\desktop\mythings\onyx2d\code\samples\sample_helloworld\src\playership.cpp
+	"PlayerShip.h"
+	"Bullet.h"
+	"LifeBar.h"
+
+1477584950 c:\users\josue\desktop\mythings\onyx2d\code\samples\sample_helloworld\include\bulletsmanager.h
+	"Ship.h"
+
+1477585007 c:\users\josue\desktop\mythings\onyx2d\code\samples\sample_helloworld\include\bullet.h
+	"../../../onyx2d.h"
+
+1477584919 source:c:\users\josue\desktop\mythings\onyx2d\code\samples\sample_helloworld\src\bullet.cpp
+	"Bullet.h"
+	"EnemyShip.h"
+	"PlayerShip.h"
+
+1477585046 source:c:\users\josue\desktop\mythings\onyx2d\code\samples\sample_helloworld\src\bulletsmanager.cpp
+	"BulletsManager.h"
+	"Bullet.h"
+
+1477580296 source:c:\users\josue\desktop\mythings\onyx2d\code\samples\sample_helloworld\src\ship.cpp
+	"Ship.h"
+

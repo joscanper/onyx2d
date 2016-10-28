@@ -55,8 +55,12 @@ public:
     void Update();
 
 
+    void SetFramerate(int fps);
+    int GetFramerate();
+
 protected:
 private:
+    int _framerate = 60;
 };
 
 inline cCore* Core()

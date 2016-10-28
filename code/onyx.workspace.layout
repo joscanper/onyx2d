@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_workspace_layout_file>
-	<ActiveProject path="samples/sample_particlesystem/sample_particlesystem.cbp" />
+	<FileVersion major="1" minor="0" />
+	<ActiveProject path="samples/sample_helloworld/sample_helloworld.cbp" />
 	<PreferredTarget name="Debug" />
 </CodeBlocks_workspace_layout_file>
